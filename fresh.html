@@ -1,0 +1,302 @@
+
+<html>
+    <head>
+        <title>Kitchen Recipes</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+    <style>
+        body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+#navig {
+    width: 950px;
+    padding: 15px;
+    margin: 0px auto 0px auto;
+    /* border-top: 10px solid rgb(151, 57, 57);  */
+    border-bottom: 7px solid #97BE11;
+ ;
+; 
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ddb {
+  background-color: #97BE11;
+;
+  color: rgb(71, 56, 43);
+  padding-bottom: 10%;
+  padding-right: 0%;
+  
+  font-size: 20px;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  min-width: 150px; 
+}
+
+.dd {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  min-width: 150px; 
+}
+
+.ddc {
+  display: none;
+  position: absolute; 
+  background-color: #97BE11;
+  min-width: 150px; 
+  z-index: 1;
+}
+
+.ddc a {
+  color: rgb(26, 20, 16);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.ddc a:hover {
+  background-color: #ecb746;
+}
+
+.dd:hover .ddc {
+    display: block;
+}
+
+.dd:hover .ddb {background-color: #ecb746;}
+
+
+
+
+
+.da {
+ margin-top : 10px;
+ }
+
+#foooter {
+    background-color: sandybrown;
+    padding: 10px;
+    margin: 10px;
+}
+
+header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#feature {
+    /* text-align: center;
+    width: 825px;
+    padding: 50px;
+    border: 10px solid rgb(151, 57, 57);
+    margin-top: 50px; */
+    /* background: #d46e90; */
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 110%;
+    text-align: center;
+    border-radius: 12px;
+    padding: 25px;
+    padding-top: 50px;
+    height: 200px;
+    margin-top: 40px;
+    background-image: -webkit-linear-gradient(rgb(197, 228, 147) ,  #9cbb35);
+    margin-top: 100px;
+    margin-bottom: 25px;
+
+    
+}
+#food {
+
+ width: 950px;
+  box-shadow: 20px 20px 20px rgb(122, 104, 92); 
+ 
+}
+
+#food img{
+    border-radius: 10px  10px 10px 10px  ;
+}
+
+
+p1 {
+    text-align: center;
+    text-decoration: solid;
+    text-shadow: teal;
+}
+
+
+li {
+    display: inline;
+    padding: 0px 30px;
+    
+}
+
+
+body {
+     background-color: #d1d887;
+; 
+    background-position: center;
+     /* background-image: -webkit-linear-gradient(rgb(233, 227, 218) , rgba(141, 201, 29, 0.959));
+    align-items: center;  */
+    
+}
+
+/* @media screen and (min-width: 300px) and (max-width: 499px) {
+    .check  {
+	height: 100px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .check  {
+	height: 68%;
+}
+} */
+
+#slider {
+	overflow: hidden;
+}
+
+@keyframes slider {
+	0% { left: 0; }
+	30% { left: 0; }
+	33% { left: -100%; }
+	63% { left: -100%; }
+	66% { left: -200%; }
+	95% { left: -200%; }
+	100% { left: 0; }
+}
+#slider figure {
+	width:300%;
+	position: relative;
+	animation: 9s slider infinite;
+}
+
+/* #slider figure:hover {
+	animation-play-state: paused;
+} */
+
+#slider figure img {
+	width: 33.333333333%;
+	 height : 68%; 
+	float: left;
+}
+
+
+    </style>
+    <body>
+        <header>
+            <h1>
+                <a href="fresh.html" >
+                <img src="https://biz.prlog.org/savoryinstitute/logo.png" alt="logo" height="80" width="250" />
+                </a>
+            </h1>
+            <nav>
+                <div id="navig">
+                   
+                    <div class="dd">
+                        <button class="ddb">Continental <span class="material-icons da">
+keyboard_arrow_down
+</span></button>
+                        <div class="ddc">
+                            <a href="japanese.html">Japanese</a>
+                            <a href="#">Chinese</a>
+                            <a href="#">Thai</a>
+                            <a href="#">Italian</a>
+                            <a href="#">European</a>
+                            <a href="#">American</a>
+                        </div>
+                    </div>
+                    <div class="dd">
+
+                        <button class="ddb">Indian <span class="material-icons da">
+keyboard_arrow_down
+</span></button></button>
+                        <div class="ddc">
+                            <a href="east indian.html">East Indian</a>
+                            <a href="west indian.html">West Indian</a>
+                            <a href="north indian.html">North Indian</a>
+                            <a href="south indian.html">South Indian</a>
+                        </div>
+                    </div>
+                    <div class="dd">
+
+                        <button class="ddb">Dessert <span class="material-icons da">
+keyboard_arrow_down
+</span></button></button>
+                        <div class="ddc">
+                            <a href="honey cake.html">Cake</a>
+                            <a href="custard pie.html">Custard pie</a>
+                        </div>
+                    </div>
+                    <div class="dd">
+
+                        <button class="ddb">Smooties <span class="material-icons da">
+keyboard_arrow_down
+</span></button></button>
+                        <div class="ddc">
+                            <a href="green spinach smoothie.html">Green Spinach</a>
+                            <a href="mixed fruit smoothie.html">Mixed Fruit</a> 
+                        </div>
+                        </div>
+
+                        <div class="dd">
+
+                            <button class="ddb">Quick Bites <span class="material-icons da">
+    keyboard_arrow_down
+    </span></button></button>
+                            <div class="ddc">
+                                <a href="paneer sandwich.html">Sandwich</a>
+                                <a href="#">Chaat</a> 
+                            </div>
+                            </div>
+                            
+                        
+            
+            
+                </div>
+            </nav>
+        </header>
+        <!-- <div id="food">
+        <img src="https://appgrooves.com/cdn/lifegoal/220/e/53014-45519-56524-56048_w1200.png" alt="food-image" height= "400"  width="950" />
+        </div> -->
+        <div id="food">
+            <!-- <img src="Image20211222013711.jpg" alt="food-image" height= "400"  width="950" /> -->
+            <div id="slider" class="check"> 
+                <figure>
+                      <img src="Image20211222013711.jpg">
+                      <img src="mocktails.png">
+                      <img src="speghatti.png">
+            
+                </figure>
+          </div>
+            </div>
+            <div id="feature">
+                <p1>Welcome to Savory! We offer around hundreds of different Recipes
+                    ranging from Indian to Continental, we have variety of recipes that
+                    we are absolutely sure you would like to try once at home, to treat yourself,
+                    or to your loved ones. We made sure to bring the best experience for learning
+                    a new recipe in one platform. Feel free to browse your favorite sections and try
+                    the recipes given and we do encourage people to share their feedback in the Contact
+                    section, where you can share your personal recipe which we would be more than happy to
+                    update on our page and share with the World.
+                </p1>
+            </div>
+        
+        <div id="footer">
+            <p>&copy: Savory 2021</p>
+        </div>
+    </body>
